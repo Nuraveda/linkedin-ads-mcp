@@ -7,4 +7,4 @@ create_campaign_group, create_campaign, update_campaign_status.
 See README.md for OAuth setup and required scopes (r_ads, rw_ads,
 r_ads_reporting).
 """
-__version__ = "0.1.0"
+__version__ = "0.4.1"

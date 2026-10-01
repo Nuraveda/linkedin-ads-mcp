@@ -1,7 +1,8 @@
 name: release
 
-# Publishes to PyPI using the org-level PYPI_API_TOKEN secret (owner-independent, so it keeps
-# working after the repo moved into the Meshpilot-AGI org). Fires on a v* tag or manual dispatch.
+# Publishes to PyPI via trusted publishing (OIDC) — no stored token. The PyPI project must list
+# this repo (Nuraveda/linkedin-ads-mcp), workflow `release.yml`, as a trusted publisher.
+# Fires on a v* tag or manual dispatch.
 
 on:
   push:
@@ -11,6 +12,9 @@ on:
 jobs:
   pypi-publish:
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
     steps:
       - uses: actions/checkout@v4
 
@@ -23,6 +27,5 @@ jobs:
       - name: Publish to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
-          password: ${{ secrets.PYPI_API_TOKEN }}
           # Re-runs / partial uploads won't fail the job on already-present files.
           skip-existing: true

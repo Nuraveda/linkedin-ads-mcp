@@ -44,7 +44,7 @@ uv add linkedin-ads-mcp
 **From source:**
 
 ```bash
-git clone https://github.com/Nuraveda-Labs/linkedin-ads-mcp.git
+git clone https://github.com/Nuraveda/linkedin-ads-mcp.git
 cd linkedin-ads-mcp
 uv pip install -e .          # or: pip install -e .
 ```
