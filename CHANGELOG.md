@@ -22,7 +22,7 @@ Body text (if present) shown as indented sub-bullets.
 
 - **20:53 UTC** — Clarify status: media upload pattern proven in Grow social agent, port to sponsored creatives queued (`1a71d3d`) — 1 file
 - **20:50 UTC** — Point links to grow.glitchexecutor.com (Grow product site) (`02c5c8a`) — 1 file
-- **20:49 UTC** — Use support@glitchexecutor.com as contact (`3cc4e31`) — 2 files
+- **20:49 UTC** — Use help.nuraveda@gmail.com as contact (`3cc4e31`) — 2 files
 - **20:46 UTC** — Rebrand to Glitch Grow LinkedIn Ad MCP + document hosted-app path (`b94a4fa`) — 4 files
     - Package name: linkedin-ads-mcp → glitch-grow-linkedin-ad-mcp
     - Console script renamed accordingly (matches PyPI naming)
